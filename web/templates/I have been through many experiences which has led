@@ -1,0 +1,28 @@
+Awesome Fifa Fun With Irfhan, aamir:
+
+3 Keys to awesome Single Page Application 
+
+This is some basics in very simple terms so that you dont go wrong.
+Single Page Web Applications are the next step in the evolution of the web, where hyperlinks join information to information, instead of page to page. 
+
+1.Move Logic and Data to client:
+
+The entire page, including the navigation and supporting framework, loads one time and subsequent requests for data are cached in the client and the client becomes responsible for the business logic of the application while the server's role is focused on authentication, validation, and data persistency.
+
+2.Use ajax To Load only changes and not all the data
+3.Plan for challenges
+	
+	broken back button
+		Browser has the history of url changes so changing the url on action would fix this issue.
+
+		var myHash = document.location.hash;
+
+		$(document).on('hashchange', function() {
+		    if (myHash != document.location.hash) {
+		        //do something
+		    }
+		});
+
+	seo complications
+	missing analytics
+	and lack of error tracking
